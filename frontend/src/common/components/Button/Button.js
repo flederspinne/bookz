@@ -1,6 +1,6 @@
 import React from 'react'
 
-import './Button.scss'
+import s from './Button.module.scss'
 
 
 const Button = (props) => {
@@ -9,7 +9,7 @@ const Button = (props) => {
         children
     } = props
 
-    return <button className="button" onClick={onClick}>{children}</button>
+    return <button className={s.button} onClick={onClick}>{children}</button>
 }
 
 export default Button
