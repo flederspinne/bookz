@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0eda3af9-1e24-43fa-bf6f-a957c047fea3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/bookz.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1V9LF5cZ71IcM4nGoqZ3R9dLuWf" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/src/common/components/Button" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0eda3af9-1e24-43fa-bf6f-a957c047fea3" name="Default Changelist" comment="" />
+      <created>1576660256292</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1576660256292</updated>
+      <workItem from="1576660257425" duration="10891000" />
+    </task>
+    <task id="LOCAL-00001" summary="Создана заготовка фронтенда проекта.">
+      <created>1576661438997</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1576661438997</updated>
+    </task>
+    <task id="LOCAL-00002" summary="В проект добавлен Storybook.">
+      <created>1576662098281</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1576662098281</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Добавлен SCSS, добавлена тестовая кнопка.">
+      <created>1576664998692</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1576664998692</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Добавлен файл стилей с глобальными переменными.">
+      <created>1576673915697</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1576673915698</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Создана заготовка фронтенда проекта." />
+    <MESSAGE value="В проект добавлен Storybook." />
+    <MESSAGE value="Добавлен SCSS, добавлена тестовая кнопка." />
+    <MESSAGE value="Добавлен файл стилей с глобальными переменными." />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлен файл стилей с глобальными переменными." />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="726" y="304" width="524" height="505" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1576672265885">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="726" y="304" width="524" height="505" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1576672265885" />
+    <state x="632" y="155" width="712" height="804" key="CommitChangelistDialog2" timestamp="1576673915631">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="632" y="155" width="712" height="804" key="CommitChangelistDialog2/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1576673915631" />
+    <state x="874" y="267" width="228" height="579" key="RollbackChangesDialog" timestamp="1576661217322">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="874" y="267" width="228" height="579" key="RollbackChangesDialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1576661217322" />
+    <state x="889" y="477" width="199" height="159" key="VCS.EditChangelistDialog" timestamp="1576661207077">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="889" y="477" width="199" height="159" key="VCS.EditChangelistDialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1576661207077" />
+    <state x="588" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1576665012153">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="588" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1576665012153" />
+  </component>
+</project>
