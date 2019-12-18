@@ -7,5 +7,5 @@ export default {
   title: 'Button',
 };
 
-export const text = () => <Button onClick={action('clicked')} />;
+export const text = () => <Button onClick={action('clicked')}>lol kek</Button>;
 
