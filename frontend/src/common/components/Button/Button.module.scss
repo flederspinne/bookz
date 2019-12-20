@@ -8,4 +8,14 @@
   background: $turquoise;
   border: none;
   border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+
+  &:hover {
+    background: $light-turquoise;
+  }
+
+  &:active {
+    background: $dark-turquoise;
+  }
 }
