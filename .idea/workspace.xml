@@ -2,12 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0eda3af9-1e24-43fa-bf6f-a957c047fea3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/bookz.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/fonts/Montserrat-SemiBold.otf" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/common/assets/fonts/Montserrat-SemiBold.otf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/fonts/Montserrat-SemiBold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/common/assets/fonts/Montserrat-SemiBold.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/fonts/montserrat.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/common/assets/fonts/montserrat.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/fonts/montserrat.woff" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/common/assets/fonts/montserrat.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/fonts/montserrat.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/common/assets/fonts/montserrat.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/fonts/montserratblack.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/common/assets/fonts/montserratblack.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/fonts/montserratblack.woff" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/common/assets/fonts/montserratblack.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/fonts/montserratblack.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/common/assets/fonts/montserratblack.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/fonts/montserratbold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/common/assets/fonts/montserratbold.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/fonts/montserratbold.woff" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/common/assets/fonts/montserratbold.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/fonts/montserratbold.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/common/assets/fonts/montserratbold.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/fonts/montserrathairline.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/common/assets/fonts/montserrathairline.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/fonts/montserrathairline.woff" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/common/assets/fonts/montserrathairline.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/fonts/montserrathairline.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/common/assets/fonts/montserrathairline.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/fonts/montserratlight.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/common/assets/fonts/montserratlight.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/fonts/montserratlight.woff" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/common/assets/fonts/montserratlight.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/fonts/montserratlight.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/common/assets/fonts/montserratlight.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/common/styles/_fonts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/common/styles/fonts.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/common/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/common/styles/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,10 +48,16 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/frontend/assets/fonts" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/assets/fonts" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/src/common" />
+      <recent name="$PROJECT_DIR$/frontend/src" />
       <recent name="$PROJECT_DIR$/frontend/src/common/components/Button" />
     </key>
   </component>
@@ -62,7 +83,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1576660256292</updated>
-      <workItem from="1576660257425" duration="10891000" />
+      <workItem from="1576660257425" duration="18930000" />
     </task>
     <task id="LOCAL-00001" summary="Создана заготовка фронтенда проекта.">
       <created>1576661438997</created>
@@ -92,7 +113,42 @@
       <option name="project" value="LOCAL" />
       <updated>1576673915698</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Коммит перед операцией eject.">
+      <created>1576675020137</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1576675020137</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Выполнена операция eject, настройки Webpack сконфигурированы таким образом, чтобы во время сборки протягивался файл с глобальными переменными.">
+      <created>1576677061721</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1576677061721</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Сконфигурированы настройки Webpack для Storybook.">
+      <created>1576822127708</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1576822127709</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Стилизован компонент Кнопка.">
+      <created>1576822947057</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1576822947057</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Внедрены шрифты.">
+      <created>1576824127441</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1576824127441</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,28 +159,33 @@
     <MESSAGE value="В проект добавлен Storybook." />
     <MESSAGE value="Добавлен SCSS, добавлена тестовая кнопка." />
     <MESSAGE value="Добавлен файл стилей с глобальными переменными." />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлен файл стилей с глобальными переменными." />
+    <MESSAGE value="Коммит перед операцией eject." />
+    <MESSAGE value="Выполнена операция eject, настройки Webpack сконфигурированы таким образом, чтобы во время сборки протягивался файл с глобальными переменными." />
+    <MESSAGE value="Сконфигурированы настройки Webpack для Storybook." />
+    <MESSAGE value="Стилизован компонент Кнопка." />
+    <MESSAGE value="Внедрены шрифты." />
+    <option name="LAST_COMMIT_MESSAGE" value="Внедрены шрифты." />
   </component>
   <component name="WindowStateProjectService">
     <state x="726" y="304" width="524" height="505" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1576672265885">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="726" y="304" width="524" height="505" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1576672265885" />
-    <state x="632" y="155" width="712" height="804" key="CommitChangelistDialog2" timestamp="1576673915631">
+    <state x="632" y="155" width="712" height="804" key="CommitChangelistDialog2" timestamp="1576824127405">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="632" y="155" width="712" height="804" key="CommitChangelistDialog2/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1576673915631" />
-    <state x="874" y="267" width="228" height="579" key="RollbackChangesDialog" timestamp="1576661217322">
+    <state x="632" y="155" width="712" height="804" key="CommitChangelistDialog2/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1576824127405" />
+    <state x="874" y="267" width="228" height="579" key="RollbackChangesDialog" timestamp="1576824139504">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="874" y="267" width="228" height="579" key="RollbackChangesDialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1576661217322" />
+    <state x="874" y="267" width="228" height="579" key="RollbackChangesDialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1576824139504" />
     <state x="889" y="477" width="199" height="159" key="VCS.EditChangelistDialog" timestamp="1576661207077">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="889" y="477" width="199" height="159" key="VCS.EditChangelistDialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1576661207077" />
-    <state x="588" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1576665012153">
+    <state x="588" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1576822953431">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="588" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1576665012153" />
+    <state x="588" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1576822953431" />
   </component>
 </project>
