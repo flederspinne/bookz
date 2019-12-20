@@ -1,0 +1,31 @@
+.inputWrapper {
+  font-size: 14px;
+  font-family: Montserrat, sans-serif;
+}
+
+.input {
+  height: 32px;
+  padding: 0 8px;
+  color: $dark-gray-2;
+  font-weight: 300;
+  font-family: Montserrat, sans-serif;
+  border: 1px solid $light-blue;
+  border-radius: 2px;
+  outline: none;
+
+  &.error {
+    border: 1px solid $red;
+  }
+}
+
+.label {
+  display: block;
+  color: $dark-gray-2;
+  margin-bottom: 8px;
+}
+
+.errorText {
+  margin-top: 8px;
+  color: $red;
+  font-size: 12px;
+}

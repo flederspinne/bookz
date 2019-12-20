@@ -21,6 +21,12 @@ module.exports = {
                     }
                 ],
             },
+            {
+                test: /\.(woff(2)?|ttf|otf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+                loaders: [{
+                    loader: 'file-loader',
+                }]
+            },
         ],
     },
 }
