@@ -16,6 +16,10 @@
   &.error {
     border: 1px solid $red;
   }
+
+  &.disabled {
+    background: $light-gray;
+  }
 }
 
 .label {
