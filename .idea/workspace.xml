@@ -2,16 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0eda3af9-1e24-43fa-bf6f-a957c047fea3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/src/common/components/Input/Input.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/common/components/Input/Input.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/common/components/Input/Input.stories.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/bin/www" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/public/stylesheets/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/routes/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/routes/users.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/views/error.jade" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/views/index.jade" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/views/layout.jade" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.storybook/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.storybook/webpack.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/common/components/Button/Button.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/common/components/Button/Button.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/common/components/Button/Button.stories.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/common/components/Button/Button.stories.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/common/styles/_colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/common/styles/_colors.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +39,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/frontend/assets/fonts" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
@@ -45,6 +47,7 @@
       <recent name="$PROJECT_DIR$/frontend/assets/fonts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/backend" />
       <recent name="$PROJECT_DIR$/frontend/src/common" />
       <recent name="$PROJECT_DIR$/frontend/src" />
       <recent name="$PROJECT_DIR$/frontend/src/common/components/Button" />
@@ -72,7 +75,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1576660256292</updated>
-      <workItem from="1576660257425" duration="23403000" />
+      <workItem from="1576660257425" duration="24909000" />
     </task>
     <task id="LOCAL-00001" summary="Создана заготовка фронтенда проекта.">
       <created>1576661438997</created>
@@ -151,7 +154,21 @@
       <option name="project" value="LOCAL" />
       <updated>1576825272443</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Создан компонент Поле ввода. Доработаны настройки Webpack для Storybook.">
+      <created>1576829741532</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1576829741532</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Доработаны стили для поля ввода.">
+      <created>1576829883966</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1576829883966</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,17 +185,19 @@
     <MESSAGE value="Стилизован компонент Кнопка." />
     <MESSAGE value="Внедрены шрифты." />
     <MESSAGE value="Доработан компонент Кнопка." />
-    <option name="LAST_COMMIT_MESSAGE" value="Доработан компонент Кнопка." />
+    <MESSAGE value="Создан компонент Поле ввода. Доработаны настройки Webpack для Storybook." />
+    <MESSAGE value="Доработаны стили для поля ввода." />
+    <option name="LAST_COMMIT_MESSAGE" value="Доработаны стили для поля ввода." />
   </component>
   <component name="WindowStateProjectService">
     <state x="726" y="304" width="524" height="505" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1576672265885">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="726" y="304" width="524" height="505" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1576672265885" />
-    <state x="632" y="155" width="712" height="804" key="CommitChangelistDialog2" timestamp="1576825272392">
+    <state x="632" y="155" width="712" height="804" key="CommitChangelistDialog2" timestamp="1576829883929">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="632" y="155" width="712" height="804" key="CommitChangelistDialog2/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1576825272392" />
+    <state x="632" y="155" width="712" height="804" key="CommitChangelistDialog2/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1576829883929" />
     <state x="874" y="267" width="228" height="579" key="RollbackChangesDialog" timestamp="1576824139504">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -187,9 +206,9 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="889" y="477" width="199" height="159" key="VCS.EditChangelistDialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1576661207077" />
-    <state x="588" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1576825278464">
+    <state x="588" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1576829889291">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="588" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1576825278464" />
+    <state x="588" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1576829889291" />
   </component>
 </project>
