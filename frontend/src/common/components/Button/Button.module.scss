@@ -1,3 +1,10 @@
 .button {
+  display: block;
+  padding: 8px 16px;
+  color: $dark-gray-2;
+  font-weight: 500;
+  text-transform: uppercase;
   background: $turquoise;
+  border: none;
+  border-radius: 2px;
 }
