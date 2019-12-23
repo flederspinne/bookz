@@ -1,9 +1,23 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router({mergeParams: true});
+const User = require('../models/User');
 
-/* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+const mongoose = require('mongoose');
+const db = require('../db');
+
+
+router.post('/', (req, res, next) => {
+  const user = new User({
+    username: 'test'
+  });
+
+  user.save((err) => {
+    if (err) {
+      console.log(err);
+    }
+  });
+
+  res.send('ok');
 });
 
 module.exports = router;
