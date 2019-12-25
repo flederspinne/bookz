@@ -1,5 +1,7 @@
 const express = require('express');
 const router = express.Router({mergeParams: true});
+const passportLocalMongoose = require('passport-local-mongoose');
+const passport = require('passport');
 const User = require('../models/User');
 
 const mongoose = require('mongoose');
@@ -7,17 +9,22 @@ const db = require('../db');
 
 
 router.post('/', (req, res, next) => {
-  const user = new User({
-    username: 'test'
-  });
 
-  user.save((err) => {
+  User.register(new User({ username: req.body.username }), req.body.password, function(err) {
     if (err) {
-      console.log(err);
+      console.log('error while user register!', err);
+      return res.send('err');
     }
-  });
 
-  res.send('ok');
+    passport.authenticate('local')(req, res, function () {
+      req.session.save(function (err) {
+        if (err) {
+          return res.send('err2');
+        }
+        return res.send('lol')
+      });
+    });
+  });
 });
 
 module.exports = router;
