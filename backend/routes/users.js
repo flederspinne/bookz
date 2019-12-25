@@ -10,13 +10,13 @@ const db = require('../db');
 
 router.post('/', (req, res, next) => {
 
-  User.register(new User({ username: req.body.username }), req.body.password, function(err) {
+  User.register(new User({ username: req.body.username }), req.body.password, (err) => {
     if (err) {
       console.log('error while user register!', err);
       return res.send('err');
     }
 
-    passport.authenticate('local')(req, res, function () {
+    passport.authenticate('local')(req, res, () => {
       req.session.save(function (err) {
         if (err) {
           return res.send('err2');
