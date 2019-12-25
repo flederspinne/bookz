@@ -7,8 +7,8 @@ const authRouter = require('./auth');
 router.use('/users', usersRouter);
 router.use('/auth', authRouter);
 
-router.get('/', function(req, res, next) {
-    res.send('api');
+router.get('/', (req, res, next) => {
+    res.send(req.session);
 });
 
 module.exports = router;

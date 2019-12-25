@@ -10,7 +10,7 @@ router.post('/login', (req, res, next) => {
             if (err) {
                 return res.send('err2');
             }
-            return res.send('lol')
+            return res.send(req.session)
         });
     });
 });

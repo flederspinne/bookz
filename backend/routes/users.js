@@ -8,7 +8,7 @@ const mongoose = require('mongoose');
 const db = require('../db');
 
 
-router.post('/', (req, res, next) => {
+router.post('/register', (req, res, next) => {
 
   User.register(new User({ username: req.body.username }), req.body.password, (err) => {
     if (err) {
