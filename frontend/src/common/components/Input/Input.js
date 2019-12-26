@@ -7,10 +7,12 @@ import s from './Input.module.scss'
 const Input = (props) => {
 
     const {
+        value,
         error,
         touched,
         label,
-        disabled
+        disabled,
+        onChange
     } = props
 
     const inputStyle = cx(s.input, {
@@ -23,7 +25,7 @@ const Input = (props) => {
             {
                 label && <label className={s.label}>{label}</label>
             }
-            <input className={inputStyle} disabled={disabled} />
+            <input value={value} className={inputStyle} disabled={disabled} onChange={onChange} />
             {
                 touched && error && <p className={s.errorText}>{error}</p>
             }
