@@ -5,3 +5,12 @@
   height: 48px;
   background: $light-blue;
 }
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logInWrapper {
+  display: flex;
+}
