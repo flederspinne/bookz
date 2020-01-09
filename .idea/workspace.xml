@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0eda3af9-1e24-43fa-bf6f-a957c047fea3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/src/common/components/Header/Header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/common/components/Header/Header.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/common/components/Logo/Logo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/common/components/Logo/Logo.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/common/components/Box/Box.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/common/components/Box/Box.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/common/styles/_offsets.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/common/styles/_colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/common/styles/_colors.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/common/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/common/components/Header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/common/components/Header/Header.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/common/components/Header/Header.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/common/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/common/styles/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +40,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/frontend/src/pages/home" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/frontend/src/common/components" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
@@ -52,6 +52,7 @@
       <recent name="$PROJECT_DIR$/frontend/src/common/components/Button" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/src/common/components" />
       <recent name="$PROJECT_DIR$/frontend/src/pages/home" />
       <recent name="$PROJECT_DIR$/frontend/assets/fonts" />
     </key>
@@ -274,7 +275,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578563243348</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Начата работа над хедером страницы.">
+      <created>1578564199182</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1578564199182</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -316,7 +324,8 @@
     <MESSAGE value="Вход пользователя в систему осуществляется корректно, однако выход из системы ещё не доработан." />
     <MESSAGE value="Доработан выход из системы." />
     <MESSAGE value="Добавлена заготовка для домашней страницы." />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлена заготовка для домашней страницы." />
+    <MESSAGE value="Начата работа над хедером страницы." />
+    <option name="LAST_COMMIT_MESSAGE" value="Начата работа над хедером страницы." />
   </component>
   <component name="WindowStateProjectService">
     <state x="451" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578550084126">
@@ -327,10 +336,10 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="726" y="304" width="524" height="505" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1577279475974" />
-    <state x="632" y="155" width="712" height="804" key="CommitChangelistDialog2" timestamp="1578563243298">
+    <state x="632" y="155" width="712" height="804" key="CommitChangelistDialog2" timestamp="1578564199128">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="632" y="155" width="712" height="804" key="CommitChangelistDialog2/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1578563243298" />
+    <state x="632" y="155" width="712" height="804" key="CommitChangelistDialog2/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1578564199128" />
     <state width="633" height="466" key="DebuggerActiveHint" timestamp="1578550208943">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -411,10 +420,10 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="889" y="477" width="199" height="159" key="VCS.EditChangelistDialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1576661207077" />
-    <state x="588" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1578558336156">
+    <state x="588" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1578564203768">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="588" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1578558336156" />
+    <state x="588" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1578564203768" />
     <state x="561" y="292" width="854" height="529" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1578551314051">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>

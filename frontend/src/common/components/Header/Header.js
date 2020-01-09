@@ -1,5 +1,6 @@
 import React from 'react'
 
+import Box from '../Box/Box'
 import Logo from '../Logo/Logo'
 
 import s from './Header.module.scss'
@@ -8,7 +9,9 @@ import s from './Header.module.scss'
 const Header = () => {
     return (
         <div className={s.header}>
-            <Logo />
+            <Box mt="xxs" ml="md">
+                <Logo />
+            </Box>
         </div>
     )
 }
