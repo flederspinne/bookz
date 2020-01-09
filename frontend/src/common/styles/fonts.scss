@@ -20,3 +20,10 @@ $path: '../assets/fonts/';
   font-weight: 500;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat Bold'), local('Montserrat-Bold'), url($path + 'Montserrat-Bold.otf') format('opentype'), url($path + 'Montserrat-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}

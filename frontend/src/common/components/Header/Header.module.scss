@@ -1,6 +1,7 @@
 .header {
-  position: absolute;
+  position: fixed;
   top: 0;
+  z-index: 5;
   width: 100%;
   height: 48px;
   background: $light-blue;
@@ -13,4 +14,19 @@
 
 .logInWrapper {
   display: flex;
+}
+
+.panelWrapper {
+  position: fixed;
+  right: 0;
+  z-index: 10;
+}
+
+.panel {
+  width: 256px;
+}
+
+.panelButton {
+  display: flex;
+  justify-content: center;
 }
