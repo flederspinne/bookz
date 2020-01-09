@@ -41,10 +41,17 @@ const LoginPage = () => {
     }
 
     const logout = async () => {
-        let response = await fetch(api.authLogout)
+        let response = await fetch(api.authLogout, {
+            mode: 'cors',
+            withCredentials: true,
+            credentials: 'include',
+            headers: {
+                'Content-Type': 'application/json;charset=utf-8'
+            },
+        })
 
-        // let result = await response.json()
-        console.log(response)
+        let result = await response.json()
+        console.log(result)
     }
 
     return (

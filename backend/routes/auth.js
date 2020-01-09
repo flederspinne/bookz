@@ -14,9 +14,10 @@ router.get('/dashboard', (req, res) => {
 router.post('/login',
     passport.authenticate('local', {failureRedirect: '/login' }),
     (req, res) => {
-    console.log(res.cookies)
+        console.log(res.cookies);
         res.send(req.user) ;
-    });
+    }
+);
 
 router.get('/logout', function(req, res) {
     req.logout();
@@ -24,7 +25,7 @@ router.get('/logout', function(req, res) {
         if (err) {
             return res.send('err3');
         }
-        return res.send('that\'s all folks')
+        return res.send({test: 'that\'s all folks'})
     })
 });
 
