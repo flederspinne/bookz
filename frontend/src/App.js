@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-d
 import links from './common/helpers/links'
 
 import Auth from './pages/auth'
-
+import Home from './pages/home'
 
 function App() {
   return (
@@ -12,6 +12,7 @@ function App() {
         <Router>
             <Switch>
                 <Route path={links.auth} component={Auth} />
+                <Route path="/" component={Home} />
             </Switch>
         </Router>
     </Fragment>
