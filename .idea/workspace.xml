@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0eda3af9-1e24-43fa-bf6f-a957c047fea3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/src/common/components/Panel/Panel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/common/components/Panel/Panel.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/common/styles/sanitize.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/routes/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/common/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/common/components/Header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/common/components/Header/Header.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/common/components/Header/Header.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/common/styles/_colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/common/styles/_colors.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/common/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/common/styles/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -297,7 +294,21 @@
       <option name="project" value="LOCAL" />
       <updated>1578569527209</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Начало разработки панели входа в систему.">
+      <created>1578573698513</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1578573698513</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Начало разработки панели входа в систему.">
+      <created>1578573719186</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1578573719186</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -315,7 +326,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Добавлен SCSS, добавлена тестовая кнопка." />
     <MESSAGE value="Добавлен файл стилей с глобальными переменными." />
     <MESSAGE value="Коммит перед операцией eject." />
     <MESSAGE value="Выполнена операция eject, настройки Webpack сконфигурированы таким образом, чтобы во время сборки протягивался файл с глобальными переменными." />
@@ -340,7 +350,8 @@
     <MESSAGE value="Начата работа над хедером страницы." />
     <MESSAGE value="Внедрён компонент для отступов." />
     <MESSAGE value="Выделен компонент для ссылок." />
-    <option name="LAST_COMMIT_MESSAGE" value="Выделен компонент для ссылок." />
+    <MESSAGE value="Начало разработки панели входа в систему." />
+    <option name="LAST_COMMIT_MESSAGE" value="Начало разработки панели входа в систему." />
   </component>
   <component name="WindowStateProjectService">
     <state x="451" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578550084126">
@@ -351,10 +362,10 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="726" y="304" width="524" height="505" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1577279475974" />
-    <state x="632" y="155" width="712" height="804" key="CommitChangelistDialog2" timestamp="1578573698404">
+    <state x="632" y="155" width="712" height="804" key="CommitChangelistDialog2" timestamp="1578573719141">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="632" y="155" width="712" height="804" key="CommitChangelistDialog2/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1578573698404" />
+    <state x="632" y="155" width="712" height="804" key="CommitChangelistDialog2/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1578573719141" />
     <state width="633" height="466" key="DebuggerActiveHint" timestamp="1578550208943">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -435,10 +446,10 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="889" y="477" width="199" height="159" key="VCS.EditChangelistDialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1576661207077" />
-    <state x="588" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1578569534046">
+    <state x="588" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1578573730466">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="588" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1578569534046" />
+    <state x="588" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1578573730466" />
     <state x="561" y="292" width="854" height="529" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1578551314051">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>

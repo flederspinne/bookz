@@ -27,4 +27,12 @@ router.post('/register', (req, res, next) => {
   });
 });
 
+router.get('/id', (req, res) => {
+  if (!req.isAuthenticated()) {
+    res.status(403).send({});
+  } else {
+    res.send(req.user);
+  }
+});
+
 module.exports = router;

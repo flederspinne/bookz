@@ -12,7 +12,9 @@ import api from '../../helpers/api'
 import s from './Header.module.scss'
 
 
-const Header = () => {
+const Header = (props) => {
+
+    const { user } = props
 
     const [ username, setUsername ] = useState('')
     const [ password, setPassword ] = useState('')
@@ -42,30 +44,46 @@ const Header = () => {
                 <Box mt="xxs" ml="md" className={s.wrapper}>
                     <Logo />
 
-                    <div className={s.logInWrapper}>
-                        <Box mt="xsm" mr="sm">
-                            <Link>Войти</Link>
-                        </Box>
-                        <Box mt="xsm" mr="sm">
-                            <Link>Зарегистрироваться</Link>
-                        </Box>
-                    </div>
+                    {
+                        !user
+                        && (
+                            <div className={s.logInWrapper}>
+                                <Box mt="xsm" mr="sm">
+                                    <Link>Войти</Link>
+                                </Box>
+                                <Box mt="xsm" mr="sm">
+                                    <Link>Зарегистрироваться</Link>
+                                </Box>
+                            </div>
+                        )
+                    }
+                    {
+                        user
+                        && (
+                            <Fragment>{user.username}</Fragment>
+                        )
+                    }
                 </Box>
             </div>
-            <Box mt="lg" mr="xlg" className={s.panelWrapper}>
-                <Panel
-                    title="Вход в систему"
-                    className={s.panel}
-                >
-                    <Input label="Логин" value={username} onChange={(e) => setUsername(e.target.value)} />
-                    <Box mt="xs">
-                        <Input label="Пароль" value={password} onChange={(e) => setPassword(e.target.value)} />
+            {
+                !user
+                && (
+                    <Box mt="lg" mr="xlg" className={s.panelWrapper}>
+                        <Panel
+                            title="Вход в систему"
+                            className={s.panel}
+                        >
+                            <Input label="Логин" value={username} onChange={(e) => setUsername(e.target.value)} />
+                            <Box mt="xs">
+                                <Input label="Пароль" value={password} onChange={(e) => setPassword(e.target.value)} />
+                            </Box>
+                            <Box mt="xs" className={s.panelButton}>
+                                <Button onClick={submit}>Вход</Button>
+                            </Box>
+                        </Panel>
                     </Box>
-                    <Box mt="xs" className={s.panelButton}>
-                        <Button onClick={submit}>Вход</Button>
-                    </Box>
-                </Panel>
-            </Box>
+                )
+            }
         </Fragment>
     )
 }
