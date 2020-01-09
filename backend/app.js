@@ -14,17 +14,29 @@ const apiRouter = require('./routes/api');
 const User = require('./models/User');
 
 const app = express();
+const session = require('express-session');
+const MongoStore = require('connect-mongo')(session);
+const mongoose = require('mongoose');
 
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(cookieParser());
 
-app.use(require('express-session')({
+
+app.use(session({
   secret: 'keyboard cat',
   resave: false,
-  saveUninitialized: false
+  saveUninitialized: false,
+  store: new MongoStore({
+    mongooseConnection: mongoose.connection
+  }),
+  cookie: {
+    maxAge: 10 * 60 * 1000,
+    httpOnly: false,
+  }
 }));
+
+app.use(cookieParser());
 
 app.use(passport.initialize());
 app.use(passport.session());
@@ -34,13 +46,14 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "http://localhost:3000");
   res.header("Access-Control-Allow-Credentials", "true");
-  res.header("Access-Control-Allow-Headers", "Access-Control-Allow-Origin, Content-Type, Accept, X-Requested-With");
+  res.header("Access-Control-Allow-Headers", "Set-Cookie, Access-Control-Allow-Origin, Content-Type, Accept, X-Requested-With");
   next();
 });
 
 app.use('/', indexRouter);
 app.use('/api', apiRouter);
 
+// passport.use(new LocalStrategy(User.authenticate()));
 passport.use(new LocalStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
