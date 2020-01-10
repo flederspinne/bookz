@@ -24,7 +24,7 @@ router.post('/register', (req, res, next) => {
 
 router.get('/id', (req, res) => {
   if (!req.isAuthenticated()) {
-    res.status(403).send(undefined);
+    res.status(403);
   } else {
     res.send(req.user);
   }

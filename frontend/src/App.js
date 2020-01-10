@@ -9,7 +9,7 @@ import Home from './pages/home'
 
 const App = () => {
 
-    const [ user, setUser ] = useState(undefined)
+    const [ user, setUser ] = useState(null)
 
     useEffect(() => {
         const fetchUser = async () => {
@@ -17,6 +17,10 @@ const App = () => {
                 withCredentials: true,
                 credentials: 'include',
             })
+
+            if (response.status === 403) {
+                return null
+            }
 
             return await response.json()
         }

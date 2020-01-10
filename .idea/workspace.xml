@@ -4,6 +4,7 @@
     <list default="true" id="0eda3af9-1e24-43fa-bf6f-a957c047fea3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -312,7 +313,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578577140122</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Исправлен вход в систему после регистрации нового пользователя.">
+      <created>1578634180228</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1578634180228</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -330,7 +338,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Коммит перед операцией eject." />
     <MESSAGE value="Выполнена операция eject, настройки Webpack сконфигурированы таким образом, чтобы во время сборки протягивался файл с глобальными переменными." />
     <MESSAGE value="Сконфигурированы настройки Webpack для Storybook." />
     <MESSAGE value="Стилизован компонент Кнопка." />
@@ -355,7 +362,8 @@
     <MESSAGE value="Выделен компонент для ссылок." />
     <MESSAGE value="Начало разработки панели входа в систему." />
     <MESSAGE value="Добавлен вывод имени пользователя, выполнившего вход в систему." />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлен вывод имени пользователя, выполнившего вход в систему." />
+    <MESSAGE value="Исправлен вход в систему после регистрации нового пользователя." />
+    <option name="LAST_COMMIT_MESSAGE" value="Исправлен вход в систему после регистрации нового пользователя." />
   </component>
   <component name="WindowStateProjectService">
     <state x="451" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578550084126">
@@ -366,10 +374,10 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="726" y="304" width="524" height="505" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1577279475974" />
-    <state x="632" y="155" width="712" height="804" key="CommitChangelistDialog2" timestamp="1578577140038">
+    <state x="632" y="155" width="712" height="804" key="CommitChangelistDialog2" timestamp="1578634180159">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="632" y="155" width="712" height="804" key="CommitChangelistDialog2/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1578577140038" />
+    <state x="632" y="155" width="712" height="804" key="CommitChangelistDialog2/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1578634180159" />
     <state width="633" height="466" key="DebuggerActiveHint" timestamp="1578550208943">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -450,10 +458,10 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="889" y="477" width="199" height="159" key="VCS.EditChangelistDialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1576661207077" />
-    <state x="588" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1578577146803">
+    <state x="588" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1578634186414">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="588" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1578577146803" />
+    <state x="588" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1578634186414" />
     <state x="561" y="292" width="854" height="529" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1578551314051">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
