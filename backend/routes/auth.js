@@ -20,4 +20,18 @@ router.get('/logout', function(req, res) {
     })
 });
 
+router.post('/vkontakte',
+    passport.authenticate('vkontakte'),
+    function(req, res){
+        // The request will be redirected to vk.com for authentication, so
+        // this function will not be called.
+    });
+
+router.get('/vkontakte/callback',
+    passport.authenticate('vkontakte', { failureRedirect: '/login' }),
+    function(req, res) {
+        // Successful authentication, redirect home.
+        res.redirect('/api/users/me');
+    });
+
 module.exports = router;

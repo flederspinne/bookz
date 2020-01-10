@@ -7,6 +7,8 @@ const User = require('../models/User');
 const mongoose = require('mongoose');
 const db = require('../db');
 
+const isAuth = require('../middleware/isAuthenticated')
+
 
 router.post('/register', (req, res, next) => {
 
@@ -22,12 +24,8 @@ router.post('/register', (req, res, next) => {
   });
 });
 
-router.get('/me', (req, res) => {
-  if (!req.isAuthenticated()) {
-    res.status(403).send(null);
-  } else {
-    res.send(req.user);
-  }
+router.get('/me', isAuth, (req, res) => {
+  res.send(req.user);
 });
 
 module.exports = router;
