@@ -46,7 +46,7 @@ const Header = (props) => {
     }
 
     const logout = () => {
-        let response = fetch(api.authLogout, {
+        fetch(api.authLogout, {
             mode: 'cors',
             withCredentials: true,
             credentials: 'include',

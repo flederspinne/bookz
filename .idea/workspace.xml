@@ -350,7 +350,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578647091790</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Реализован выход пользователя из системы.">
+      <created>1578648609864</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1578648609864</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -368,7 +375,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Доработан компонент Кнопка." />
     <MESSAGE value="Создан компонент Поле ввода. Доработаны настройки Webpack для Storybook." />
     <MESSAGE value="Доработаны стили для поля ввода." />
     <MESSAGE value="Добавлена заготовка для серверной части приложения." />
@@ -393,7 +399,8 @@
     <MESSAGE value="Создана заготовка для страницы регистрации." />
     <MESSAGE value="Реализован редирект после успешной регистрации или входа в систему." />
     <MESSAGE value="Добавлена проверка наличия кук с данными для входа пользователя." />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлена проверка наличия кук с данными для входа пользователя." />
+    <MESSAGE value="Реализован выход пользователя из системы." />
+    <option name="LAST_COMMIT_MESSAGE" value="Реализован выход пользователя из системы." />
   </component>
   <component name="WindowStateProjectService">
     <state x="451" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578550084126">
@@ -404,10 +411,10 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="726" y="304" width="524" height="505" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1577279475974" />
-    <state x="632" y="155" width="712" height="804" key="CommitChangelistDialog2" timestamp="1578647091732">
+    <state x="632" y="155" width="712" height="804" key="CommitChangelistDialog2" timestamp="1578648609815">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="632" y="155" width="712" height="804" key="CommitChangelistDialog2/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1578647091732" />
+    <state x="632" y="155" width="712" height="804" key="CommitChangelistDialog2/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1578648609815" />
     <state width="633" height="466" key="DebuggerActiveHint" timestamp="1578550208943">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
