@@ -7,7 +7,8 @@ const createLinks = (links) => mapValues(links, ((link) => `${base}${link}`))
 
 const api = createLinks({
     authLogin: 'auth/login',
-    authLogout: 'auth/logout'
+    authLogout: 'auth/logout',
+    usersRegister: 'users/register'
 })
 
 export default api

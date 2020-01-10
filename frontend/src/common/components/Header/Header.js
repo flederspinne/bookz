@@ -1,4 +1,5 @@
-import React, {Fragment, useState} from 'react'
+import React, { Fragment, useState } from 'react'
+import { useToggle } from '../../hooks'
 
 import Box from '../Box/Box'
 import Link from '../Link/Link'
@@ -8,6 +9,7 @@ import Input from '../Input/Input'
 import Button from '../Button/Button'
 
 import api from '../../helpers/api'
+import links from '../../helpers/links'
 
 import s from './Header.module.scss'
 
@@ -18,6 +20,7 @@ const Header = (props) => {
 
     const [ username, setUsername ] = useState('')
     const [ password, setPassword ] = useState('')
+    const { toggle: togglePanel, close: closePanel, isActive: isPanelOpened } = useToggle(false)
 
     const submit = async () => {
         let response = await fetch(api.authLogin, {
@@ -49,10 +52,10 @@ const Header = (props) => {
                         && (
                             <div className={s.logInWrapper}>
                                 <Box mt="xsm" mr="sm">
-                                    <Link>Войти</Link>
+                                    <Link onClick={togglePanel}>Войти</Link>
                                 </Box>
                                 <Box mt="xsm" mr="sm">
-                                    <Link>Зарегистрироваться</Link>
+                                    <Link href={links.authRegister}>Зарегистрироваться</Link>
                                 </Box>
                             </div>
                         )
@@ -66,7 +69,7 @@ const Header = (props) => {
                 </Box>
             </div>
             {
-                !user
+                !user && isPanelOpened
                 && (
                     <Box mt="lg" mr="xlg" className={s.panelWrapper}>
                         <Panel

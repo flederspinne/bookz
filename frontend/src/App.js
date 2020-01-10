@@ -7,6 +7,9 @@ import Header from './common/components/Header/Header'
 import Auth from './pages/auth'
 import Home from './pages/home'
 
+import s from './App.module.scss'
+
+
 const App = () => {
 
     const [ user, setUser ] = useState(null)
@@ -27,17 +30,20 @@ const App = () => {
 
         fetchUser()
             .then((data) => setUser(data))
-    })
+    }, [])
 
   return (
     <Fragment>
         <Header user={user} />
-        <Router>
-            <Switch>
-                <Route path={links.auth} component={Auth} />
-                <Route path="/" component={Home} />
-            </Switch>
-        </Router>
+
+        <div className={s.main}>
+            <Router>
+                <Switch>
+                    <Route path={links.auth} component={Auth} />
+                    <Route path={links.home} component={Home} />
+                </Switch>
+            </Router>
+        </div>
     </Fragment>
   );
 }

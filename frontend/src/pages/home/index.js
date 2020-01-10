@@ -1,5 +1,5 @@
 import React from 'react'
-import { Route, Switch } from 'react-router-dom'
+import { Route, Switch, Redirect } from 'react-router-dom'
 
 import links from '../../common/helpers/links'
 
@@ -12,6 +12,7 @@ const Auth = (props) => {
     return (
         <Switch>
             <Route exact path={url} component={HomePage} />
+            <Redirect to={url} />
         </Switch>
     )
 }
