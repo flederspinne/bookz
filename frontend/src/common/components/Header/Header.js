@@ -16,7 +16,10 @@ import s from './Header.module.scss'
 
 const Header = (props) => {
 
-    const { user } = props
+    const {
+        user,
+        setUser
+    } = props
 
     const [ username, setUsername ] = useState('')
     const [ password, setPassword ] = useState('')
@@ -39,7 +42,9 @@ const Header = (props) => {
 
         let result = await response.json()
         console.log(result)
+        setUser(result)
     }
+
 
     return (
         <Fragment>

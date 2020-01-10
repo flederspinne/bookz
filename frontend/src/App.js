@@ -34,12 +34,12 @@ const App = () => {
 
   return (
     <Fragment>
-        <Header user={user} />
+        <Header user={user} setUser={setUser} />
 
         <div className={s.main}>
             <Router>
                 <Switch>
-                    <Route path={links.auth} component={Auth} />
+                    <Route path={links.auth} render={(props) => <Auth setUser={setUser} {...props} /> } />
                     <Route path={links.home} component={Home} />
                 </Switch>
             </Router>

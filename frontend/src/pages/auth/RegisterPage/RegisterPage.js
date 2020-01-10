@@ -13,7 +13,10 @@ import s from './RegisterPage.module.scss'
 
 const RegisterPage = (props) => {
 
-    const { history } = props
+    const {
+        history,
+        setUser
+    } = props
 
     const [ username, setUsername ] = useState('')
     const [ password, setPassword ] = useState('')
@@ -35,7 +38,8 @@ const RegisterPage = (props) => {
 
         let result = await response.json()
         console.log(result)
-        history.push(links.authLogin)
+        setUser(result)
+        history.push(links.home)
     }
 
     return(
