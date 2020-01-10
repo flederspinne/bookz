@@ -16,7 +16,7 @@ router.get('/logout', function(req, res) {
         if (err) {
             return res.send('err3');
         }
-        return res.send({test: 'that\'s all folks'})
+        return res.send(null)
     })
 });
 

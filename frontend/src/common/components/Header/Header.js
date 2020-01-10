@@ -25,7 +25,7 @@ const Header = (props) => {
     const [ password, setPassword ] = useState('')
     const { toggle: togglePanel, close: closePanel, isActive: isPanelOpened } = useToggle(false)
 
-    const submit = async () => {
+    const login = async () => {
         let response = await fetch(api.authLogin, {
             method: 'POST',
             mode: 'cors',
@@ -45,6 +45,17 @@ const Header = (props) => {
         setUser(result)
     }
 
+    const logout = () => {
+        let response = fetch(api.authLogout, {
+            mode: 'cors',
+            withCredentials: true,
+            credentials: 'include',
+            headers: {
+                'Content-Type': 'application/json;charset=utf-8'
+            },
+        })
+            .then(() => setUser(null))
+    }
 
     return (
         <Fragment>
@@ -68,7 +79,10 @@ const Header = (props) => {
                     {
                         user
                         && (
-                            <Fragment>{user.username}</Fragment>
+                            <Fragment>
+                                {user.username}
+                                <Link onClick={logout}>Выйти</Link>
+                            </Fragment>
                         )
                     }
                 </Box>
@@ -86,7 +100,7 @@ const Header = (props) => {
                                 <Input label="Пароль" value={password} onChange={(e) => setPassword(e.target.value)} />
                             </Box>
                             <Box mt="xs" className={s.panelButton}>
-                                <Button onClick={submit}>Вход</Button>
+                                <Button onClick={login}>Вход</Button>
                             </Box>
                         </Panel>
                     </Box>
