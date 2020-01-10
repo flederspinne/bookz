@@ -6,7 +6,7 @@ const passport = require('passport');
 router.post('/login',
     passport.authenticate('local', { failureRedirect: '/login' }),
     function(req, res) {
-        res.redirect('/api/users/id');
+        res.redirect('/api/users/me');
     }
 );
 

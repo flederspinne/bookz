@@ -2,6 +2,8 @@ import React, { Fragment, useState, useEffect } from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 import links from './common/helpers/links'
+import api from './common/helpers/api'
+import { getCookie } from './common/helpers'
 
 import Header from './common/components/Header/Header'
 import Auth from './pages/auth'
@@ -16,7 +18,7 @@ const App = () => {
 
     useEffect(() => {
         const fetchUser = async () => {
-            let response = await fetch('http://localhost:4000/api/users/id', {
+            let response = await fetch(api.usersMe, {
                 withCredentials: true,
                 credentials: 'include',
             })
@@ -28,8 +30,10 @@ const App = () => {
             return await response.json()
         }
 
-        fetchUser()
-            .then((data) => setUser(data))
+        if (getCookie('connect.sid')) {
+            fetchUser()
+                .then((data) => setUser(data))
+        }
     }, [])
 
   return (

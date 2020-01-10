@@ -17,14 +17,14 @@ router.post('/register', (req, res, next) => {
     }
 
     passport.authenticate('local')(req, res, () => {
-      res.redirect('/api/users/id');
+      res.redirect('/api/users/me');
     });
   });
 });
 
-router.get('/id', (req, res) => {
+router.get('/me', (req, res) => {
   if (!req.isAuthenticated()) {
-    res.status(403);
+    res.status(403).send(null);
   } else {
     res.send(req.user);
   }
