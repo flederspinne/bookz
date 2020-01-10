@@ -17,19 +17,14 @@ router.post('/register', (req, res, next) => {
     }
 
     passport.authenticate('local')(req, res, () => {
-      req.session.save(function (err) {
-        if (err) {
-          return res.send('err2');
-        }
-        return res.send('lol')
-      });
+      res.redirect('/api/users/id');
     });
   });
 });
 
 router.get('/id', (req, res) => {
   if (!req.isAuthenticated()) {
-    res.status(403).send({});
+    res.status(403).send(undefined);
   } else {
     res.send(req.user);
   }
