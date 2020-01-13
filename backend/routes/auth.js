@@ -34,4 +34,18 @@ router.get('/vkontakte/callback',
         res.redirect('/api/users/me');
     });
 
+router.post('/google',
+    passport.authenticate('google', { scope: ['profile'] }),
+    function(req, res){
+    // The request will be redirected to vk.com for authentication, so
+    // this function will not be called.
+});
+
+router.get('/google/callback',
+    passport.authenticate('google', { failureRedirect: '/login' }),
+    function(req, res) {
+        // Successful authentication, redirect home.
+        res.redirect('/api/users/me');
+    });
+
 module.exports = router;
