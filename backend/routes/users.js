@@ -7,6 +7,8 @@ const User = require('../models/User');
 const mongoose = require('mongoose');
 const db = require('../db');
 
+const isAuth = require('../middleware/isAuthenticated')
+
 
 router.post('/register', (req, res, next) => {
 
@@ -17,14 +19,13 @@ router.post('/register', (req, res, next) => {
     }
 
     passport.authenticate('local')(req, res, () => {
-      req.session.save(function (err) {
-        if (err) {
-          return res.send('err2');
-        }
-        return res.send('lol')
-      });
+      res.redirect('/api/users/me');
     });
   });
+});
+
+router.get('/me', isAuth, (req, res) => {
+  res.send(req.user);
 });
 
 module.exports = router;

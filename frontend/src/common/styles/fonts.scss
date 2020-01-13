@@ -2,42 +2,28 @@ $path: '../assets/fonts/';
 
 @font-face {
   font-family: 'Montserrat';
-  src: local('Montserrat Hairline'), local('Montserrat-Hairline'), url($path + 'montserrathairline.woff2') format('woff2'), url($path + 'montserrathairline.woff') format('woff'), url($path + 'montserrathairline.ttf') format('truetype');
-  font-weight: 100;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Montserrat';
-  src: local('Montserrat Light'), local('Montserrat-Light'), url($path + 'montserratlight.woff2') format('woff2'), url($path + 'montserratlight.woff') format('woff'), url($path + 'montserratlight.ttf') format('truetype');
+  src: local('Montserrat Light'), local('Montserrat-Light'), url($path + 'Montserrat-Light.otf') format('opentype'), url($path + 'Montserrat-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Montserrat';
-  src: local('Montserrat'), local('Montserrat-Regular'), url($path + 'montserrat.woff2') format('woff2'), url($path + 'montserrat.woff') format('woff'), url($path + 'montserrat.ttf') format('truetype');
-  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url($path + 'Montserrat-Regular.otf') format('opentype'), url($path + 'Montserrat-Regular.ttf') format('truetype');
+  font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Montserrat';
-  src: local('Montserrat Semi Bold'), local('Montserrat-Semi-Bold'), url($path + 'Montserrat-SemiBold.otf') format('otf'), url($path + 'Montserrat-SemiBold.ttf') format('truetype');
-  font-weight: 600;
+  src: local('Montserrat Medium'), local('Montserrat-Medium'), url($path + 'Montserrat-Medium.otf') format('opentype'), url($path + 'Montserrat-Medium.ttf') format('truetype');
+  font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Montserrat';
-  src: local('Montserrat Bold'), local('Montserrat-Bold'), url($path + 'montserratbold.woff2') format('woff2'), url($path + 'montserratbold.woff') format('woff'), url($path + 'montserratbold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Montserrat';
-  src: local('Montserrat Black'), local('Montserrat-Black'), url($path + 'montserratblack.woff2') format('woff2'), url($path + 'montserratblack.woff') format('woff'), url($path + 'montserratblack.ttf') format('truetype');
-  font-weight: 900;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'), url($path + 'Montserrat-Bold.otf') format('opentype'), url($path + 'Montserrat-Bold.ttf') format('truetype');
+  font-weight: bold;
   font-style: normal;
 }
