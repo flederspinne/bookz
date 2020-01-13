@@ -98,7 +98,7 @@ passport.use(new googleStrategy({
     console.log('refreshToken', refreshToken);
     console.log('profile', profile)
     User.findOne({
-      'username': profile.username
+      'username': profile.name.givenName
     }, function(err, user) {
       if (err) {
         return done(err);
@@ -106,7 +106,7 @@ passport.use(new googleStrategy({
 
       if (!user) {
         user = new User({
-          username: profile.username,
+          username: profile.name.givenName,
         });
         user.save(function(err) {
           if (err) console.log(err);

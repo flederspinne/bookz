@@ -20,7 +20,7 @@ router.get('/logout', function(req, res) {
     })
 });
 
-router.post('/vkontakte',
+router.get('/vkontakte',
     passport.authenticate('vkontakte'),
     function(req, res){
         // The request will be redirected to vk.com for authentication, so
@@ -34,7 +34,7 @@ router.get('/vkontakte/callback',
         res.redirect('/api/users/me');
     });
 
-router.post('/google',
+router.get('/google',
     passport.authenticate('google', { scope: ['profile'] }),
     function(req, res){
     // The request will be redirected to vk.com for authentication, so
