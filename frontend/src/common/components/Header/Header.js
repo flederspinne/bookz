@@ -1,4 +1,4 @@
-import React, { Fragment, useState, useEffect } from 'react'
+import React, { Fragment, useState } from 'react'
 import { useToggle } from '../../hooks'
 
 import Box from '../Box/Box'
