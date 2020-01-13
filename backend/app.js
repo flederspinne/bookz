@@ -52,8 +52,8 @@ app.use(function(req, res, next) {
   next();
 });
 
-app.use('/', indexRouter);
 app.use('/api', apiRouter);
+app.use('/', indexRouter);
 
 passport.use(new LocalStrategy(User.authenticate()));
 passport.use(new VKontakteStrategy({
