@@ -130,8 +130,8 @@ const Header = (props) => {
                                 <Button onClick={login}>Вход</Button>
                                 {/*<Button onClick={loginVK}>ВК</Button>*/}
                                 {/*<Button onClick={loginGoogle}>Google</Button>*/}
-                                <a href="http://localhost:4000/api/auth/vkontakte">VK</a>
-                                <a href="http://localhost:4000/api/auth/google">Google</a>
+                                <a href={api.authVK}>VK</a>
+                                <a href={api.authGoogle}>Google</a>
                             </Box>
                         </Panel>
                     </Box>

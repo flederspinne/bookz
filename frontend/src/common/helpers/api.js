@@ -1,7 +1,9 @@
 import { mapValues } from 'lodash'
 
 
-const base = 'http://localhost:4000/api/'
+// const base = 'http://localhost:4000/api/'
+// const base = (process.env.REACT_APP_API_URL || 'http://localhost:4000') + '/api/'
+const base = (process.env.REACT_APP_API_URL || 'http://localhost:4000') + '/api/'
 
 const createLinks = (links) => mapValues(links, ((link) => `${base}${link}`))
 

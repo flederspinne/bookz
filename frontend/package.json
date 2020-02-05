@@ -66,7 +66,7 @@
   },
   "scripts": {
     "start": "node scripts/start.js",
-    "build": "node scripts/build.js",
+    "build": "env REACT_APP_API_URL=https://quiet-spire-65637.herokuapp.com node scripts/build.js",
     "test": "node scripts/test.js",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public"
