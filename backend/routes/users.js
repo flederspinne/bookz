@@ -3,6 +3,7 @@ const router = express.Router({mergeParams: true});
 const passportLocalMongoose = require('passport-local-mongoose');
 const passport = require('passport');
 const User = require('../models/User');
+const Avatar = require('../models/Avatar')
 
 const mongoose = require('mongoose');
 const db = require('../db');
@@ -25,6 +26,10 @@ router.post('/register', (req, res, next) => {
 });
 
 router.get('/me', isAuth, (req, res) => {
+  res.send(req.user);
+});
+
+router.post('/avatar', isAuth, (req, res) => {
   res.send(req.user);
 });
 
