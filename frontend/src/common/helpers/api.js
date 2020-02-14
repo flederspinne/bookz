@@ -13,7 +13,8 @@ const api = createLinks({
     authGoogle: 'auth/google',
     authLogout: 'auth/logout',
     usersRegister: 'users/register',
-    usersMe: 'users/me'
+    usersMe: 'users/me',
+    usersAvatar: 'users/avatar'
 })
 
 export default api

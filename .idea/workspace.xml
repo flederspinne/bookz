@@ -2,12 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0eda3af9-1e24-43fa-bf6f-a957c047fea3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/models/Avatar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/home/HomePage/HomePage.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/User.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/routes/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/users.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/common/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/common/components/Header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/common/components/Input/Input.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/common/components/Input/Input.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/common/helpers/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/common/helpers/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/home/HomePage/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/home/HomePage/HomePage.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="Pug File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -28,8 +33,9 @@
         <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/backend" />
     <option name="RESET_MODE" value="HARD" />
+    <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="ProjectId" id="1V9LF5cZ71IcM4nGoqZ3R9dLuWf" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -46,18 +52,18 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/backend" />
-      <recent name="$PROJECT_DIR$/frontend/src/common" />
-      <recent name="$PROJECT_DIR$/frontend/src" />
-      <recent name="$PROJECT_DIR$/frontend/src/common/components/Button" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/backend/public" />
       <recent name="$PROJECT_DIR$/frontend/src/common/hooks" />
       <recent name="$PROJECT_DIR$/frontend/src/common/components" />
       <recent name="$PROJECT_DIR$/frontend/src/pages/home" />
       <recent name="$PROJECT_DIR$/frontend/assets/fonts" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/backend" />
+      <recent name="$PROJECT_DIR$/frontend/src/common" />
+      <recent name="$PROJECT_DIR$/frontend/src" />
+      <recent name="$PROJECT_DIR$/frontend/src/common/components/Button" />
     </key>
   </component>
   <component name="RunManager" selected="npm.start">
@@ -104,7 +110,8 @@
       <workItem from="1576660257425" duration="53229000" />
       <workItem from="1578920179818" duration="4298000" />
       <workItem from="1579165822081" duration="3525000" />
-      <workItem from="1580889318640" duration="7726000" />
+      <workItem from="1580889318640" duration="11626000" />
+      <workItem from="1581321386989" duration="10621000" />
     </task>
     <task id="LOCAL-00001" summary="Создана заготовка фронтенда проекта.">
       <created>1576661438997</created>
@@ -393,7 +400,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578922190981</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Настроены переменные окружения для деплоя с помощью Heroku.">
+      <created>1580903189230</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1580903189230</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -413,7 +427,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Доработана заготовка для серверной части приложения." />
     <MESSAGE value="Начало разработки схем для БД." />
     <MESSAGE value="Начало разработки роутинга, тестовое сохранение пользователя в БД." />
     <MESSAGE value="Добавлен черновой вариант API для регистрации пользователя, прикручена аутентификация." />
@@ -438,7 +451,8 @@
     <MESSAGE value="Добавлено middleware для проверки, авторизован ли пользователь." />
     <MESSAGE value="Попытки прикрутить авторизацию через ВК и Google." />
     <MESSAGE value="Сделано так, чтобы бек отдавал собранный фронт." />
-    <option name="LAST_COMMIT_MESSAGE" value="Сделано так, чтобы бек отдавал собранный фронт." />
+    <MESSAGE value="Настроены переменные окружения для деплоя с помощью Heroku." />
+    <option name="LAST_COMMIT_MESSAGE" value="Настроены переменные окружения для деплоя с помощью Heroku." />
   </component>
   <component name="WindowStateProjectService">
     <state x="451" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578550084126">
@@ -449,18 +463,22 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="771" y="360" width="434" height="393" key="#com.intellij.fileTypes.FileTypeChooser/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1579166518486" />
-    <state x="726" y="304" width="524" height="505" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1577279475974">
+    <state x="726" y="304" width="524" height="505" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1581336736524">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="726" y="304" width="524" height="505" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1577279475974" />
-    <state x="632" y="155" width="712" height="804" key="CommitChangelistDialog2" timestamp="1578922190877">
+    <state x="726" y="304" width="524" height="505" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1581336736524" />
+    <state x="632" y="155" width="712" height="804" key="CommitChangelistDialog2" timestamp="1580903189151">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="632" y="155" width="712" height="804" key="CommitChangelistDialog2/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1578922190877" />
+    <state x="632" y="155" width="712" height="804" key="CommitChangelistDialog2/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1580903189151" />
     <state width="633" height="466" key="DebuggerActiveHint" timestamp="1578550208943">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="633" height="466" key="DebuggerActiveHint/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1578550208943" />
+    <state x="167" y="127" width="1653" height="853" key="DiffContextDialog" timestamp="1581657731490">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="167" y="127" width="1653" height="853" key="DiffContextDialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1581657731490" />
     <state x="776" y="311" width="424" height="491" key="FileChooserDialogImpl" timestamp="1579156282276">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -537,10 +555,10 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="889" y="477" width="199" height="159" key="VCS.EditChangelistDialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1576661207077" />
-    <state x="588" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1579172837698">
+    <state x="588" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1580903208244">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="588" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1579172837698" />
+    <state x="588" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1580903208244" />
     <state x="167" y="127" width="1653" height="853" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1578899131824">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>

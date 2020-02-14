@@ -4,10 +4,12 @@ import cx from 'classnames'
 import s from './Input.module.scss'
 
 
-const Input = (props) => {
+const Input = React.forwardRef((props, ref) => {
 
     const {
         value,
+        type,
+        name,
         error,
         touched,
         label,
@@ -25,12 +27,12 @@ const Input = (props) => {
             {
                 label && <label className={s.label}>{label}</label>
             }
-            <input value={value} className={inputStyle} disabled={disabled} onChange={onChange} />
+            <input ref={ref} type={type} name={name} value={value} className={inputStyle} disabled={disabled} onChange={onChange} />
             {
                 touched && error && <p className={s.errorText}>{error}</p>
             }
         </div>
     )
-}
+})
 
 export default Input

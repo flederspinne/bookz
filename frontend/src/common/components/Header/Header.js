@@ -45,32 +45,6 @@ const Header = (props) => {
         setUser(result)
     }
 
-    const loginVK = async () => {
-        let response = await fetch(api.authVK, {
-            mode: 'no-cors',
-            withCredentials: true,
-            credentials: 'include',
-        })
-
-        // let result = await response.json()
-        let result = await response.text()
-        console.log(result)
-        // setUser(result)
-    }
-
-    const loginGoogle = async () => {
-        let response = await fetch(api.authGoogle, {
-            mode: 'no-cors',
-            withCredentials: true,
-            credentials: 'include',
-        })
-
-        // let result = await response.json()
-        let result = await response.text()
-        console.log(result)
-        // setUser(result)
-    }
-
     const logout = () => {
         fetch(api.authLogout, {
             mode: 'cors',
@@ -128,8 +102,6 @@ const Header = (props) => {
                             </Box>
                             <Box mt="xs" className={s.panelButton}>
                                 <Button onClick={login}>Вход</Button>
-                                {/*<Button onClick={loginVK}>ВК</Button>*/}
-                                {/*<Button onClick={loginGoogle}>Google</Button>*/}
                                 <a href={api.authVK}>VK</a>
                                 <a href={api.authGoogle}>Google</a>
                             </Box>
