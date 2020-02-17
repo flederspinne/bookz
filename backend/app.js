@@ -1,3 +1,4 @@
+require('dotenv').config()
 const createError = require('http-errors');
 const express = require('express');
 const path = require('path');
@@ -8,21 +9,21 @@ const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
 const VKontakteStrategy = require('passport-vkontakte').Strategy;
 const googleStrategy = require('passport-google-oauth').OAuth2Strategy;
-
-const indexRouter = require('./routes');
-const apiRouter = require('./routes/api');
-
-const User = require('./models/User');
-
 const app = express();
 
 const session = require('express-session');
 const MongoStore = require('connect-mongo')(session);
 const mongoose = require('mongoose');
-
 app.use(logger('dev'));
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json({ limit: '50mb' }));
+app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
+
+const apiRouter = require('./routes/api');
+const indexRouter = require('./routes');
+
+const User = require('./models/User');
+const Avatar = require('./models/Avatar');
+
 
 
 app.use(session({
@@ -46,9 +47,9 @@ app.use(passport.session());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(function(req, res, next) {
-  res.header("Access-Control-Allow-Origin", "http://localhost:3000");
-  res.header("Access-Control-Allow-Credentials", "true");
-  res.header("Access-Control-Allow-Headers", "Set-Cookie, Access-Control-Allow-Origin, Content-Type, Accept, X-Requested-With");
+  res.header('Access-Control-Allow-Origin', 'http://localhost:3000');
+  res.header('Access-Control-Allow-Credentials', 'true');
+  res.header('Access-Control-Allow-Headers', 'Set-Cookie, Access-Control-Allow-Origin, Content-Type, Accept, X-Requested-With');
   next();
 });
 
@@ -59,7 +60,7 @@ passport.use(new LocalStrategy(User.authenticate()));
 passport.use(new VKontakteStrategy({
       clientID:     '7276593', // VK.com docs call it 'API ID', 'app_id', 'api_id', 'client_id' or 'apiId'
       clientSecret: 'TkRiql6bhkpF4SEgggUY',
-      callbackURL:  'http://localhost:4000/api/auth/vkontakte/callback'
+      callbackURL: (process.env.REACT_APP_API_URL || 'http://localhost:4000') + '/api/auth/vkontakte/callback'
     },
     (accessToken, refreshToken, params, profile, done) => {
       console.log('accessToken', accessToken);
@@ -67,7 +68,7 @@ passport.use(new VKontakteStrategy({
       console.log('params', params);
       console.log('profile', profile)
       User.findOne({
-        'username': profile.username
+        'ensureIndex': profile.username
       }, function(err, user) {
         if (err) {
           return done(err);
@@ -75,14 +76,14 @@ passport.use(new VKontakteStrategy({
 
         if (!user) {
           user = new User({
-            username: profile.username,
+            username: profile.displayName,
+            ensureIndex: profile.username,
           });
           user.save(function(err) {
             if (err) console.log(err);
             return done(err, user);
           });
         } else {
-          //found user. Return
           return done(err, user);
         }
       });
@@ -91,14 +92,14 @@ passport.use(new VKontakteStrategy({
 passport.use(new googleStrategy({
       clientID: '198994791507-718stsvad6bmmm4n5i9i8cl4s3h9tc6o.apps.googleusercontent.com',
       clientSecret: 'ALPFqwjPF-FasDLrEAYAmQms',
-      callbackURL: "http://localhost:4000/api/auth/google/callback"
+      callbackURL: (process.env.REACT_APP_API_URL || 'http://localhost:4000') + '/api/auth/google/callback'
   },
   (accessToken, refreshToken, profile, done) => {
     console.log('accessToken', accessToken);
     console.log('refreshToken', refreshToken);
     console.log('profile', profile)
     User.findOne({
-      'username': profile.name.givenName
+      'ensureIndex': profile.id
     }, function(err, user) {
       if (err) {
         return done(err);
@@ -106,14 +107,14 @@ passport.use(new googleStrategy({
 
       if (!user) {
         user = new User({
-          username: profile.name.givenName,
+          username: profile.displayName,
+          ensureIndex: profile.id,
         });
         user.save(function(err) {
           if (err) console.log(err);
           return done(err, user);
         });
       } else {
-        //found user. Return
         return done(err, user);
       }
     });
