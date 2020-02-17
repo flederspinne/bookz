@@ -15,6 +15,40 @@ const HomePage = () => {
 
     let imgInput = React.createRef()
 
+    const getSignedRequest = (file) => {
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', `${api.usersAvatar}?file-name=${file.name}&file-type=${file.type}`);
+        xhr.onreadystatechange = () => {
+            if(xhr.readyState === 4){
+                if(xhr.status === 200){
+                    const response = JSON.parse(xhr.responseText);
+                    uploadFile(file, response.signedRequest, response.url);
+                }
+                else{
+                    alert('Could not get signed URL.');
+                }
+            }
+        };
+        xhr.send();
+    }
+
+    const uploadFile = (file, signedRequest, url) => {
+        const xhr = new XMLHttpRequest();
+        xhr.open('PUT', signedRequest);
+        xhr.onreadystatechange = () => {
+            console.log('xhr', xhr)
+            if(xhr.readyState === 4){
+                if(xhr.status === 200){
+                    setSrcState(url)
+                }
+                else{
+                    alert('Could not upload file.');
+                }
+            }
+        };
+        xhr.send(file);
+    }
+
     const openUploadDialog = () => {
         imgInput.current.click()
     }
@@ -24,10 +58,10 @@ const HomePage = () => {
 
         if (e.target.files && e.target.files.length > 0) {
             const file = e.target.files[0]
+            setImage(file)
             reader.readAsDataURL(file)
             reader.onload = () => {
                 setSrcState(URL.createObjectURL(file))
-                setImage(file)
             }
         }
     }
@@ -36,16 +70,7 @@ const HomePage = () => {
         const data = new FormData()
         data.append('file', image)
 
-        fetch(api.usersAvatar, {
-            method: 'POST',
-            mode: 'cors',
-            withCredentials: true,
-            credentials: 'include',
-            body: data
-        })
-            .then((data) => {
-                console.log(data)
-            })
+        getSignedRequest(image)
     }
 
     return(
