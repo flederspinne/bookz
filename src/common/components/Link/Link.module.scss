@@ -1,0 +1,15 @@
+.link {
+  color: $dark-gray-2;
+  font-weight: 500;
+  font-size: 14px;
+  font-family: Montserrat, sans-serif;
+  cursor: pointer;
+
+  &:hover {
+    color: $dark-gray;
+  }
+
+  &:active {
+    color: $dark-turquoise-2;
+  }
+}
