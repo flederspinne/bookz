@@ -4,8 +4,6 @@ const passport = require('passport');
 
 
 router.post('/login',
-    // TODO: Отлавливать ошибки, если пользователя с такими учётными данными не существует,
-    //       предлагать зарегистрироваться
     passport.authenticate('local', { failureRedirect: '/login' }),
     function(req, res) {
         res.redirect('/api/users/me');
@@ -18,8 +16,7 @@ router.get('/logout', function(req, res) {
         if (err) {
             return res.send('err3');
         }
-        // return res.send(null)
-        res.redirect('/api/users/me');
+        return res.send(null)
     })
 });
 
@@ -34,8 +31,7 @@ router.get('/vkontakte/callback',
     passport.authenticate('vkontakte', { failureRedirect: '/login' }),
     function(req, res) {
         // Successful authentication, redirect home.
-        // res.redirect('/api/users/me');
-        res.redirect(process.env.BUILD === 'PRODUCTION' ? '/' : 'http://localhost:3000/');
+        res.redirect('/api/users/me');
     });
 
 router.get('/google',
@@ -49,7 +45,7 @@ router.get('/google/callback',
     passport.authenticate('google', { failureRedirect: '/login' }),
     function(req, res) {
         // Successful authentication, redirect home.
-        res.redirect(process.env.BUILD === 'PRODUCTION' ? '/' : 'http://localhost:3000/');
+        res.redirect('/api/users/me');
     });
 
 module.exports = router;
