@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 
-const dbLink = process.env.MONGODB_URI || 'mongodb://localhost:27017/bookz';
+const dbLink = process.env.MONGODB_URI;
 
 // Устанавливаем соединение с базой данных:
 mongoose.connect(dbLink)

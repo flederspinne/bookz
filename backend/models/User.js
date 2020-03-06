@@ -11,6 +11,10 @@ const User = new Schema({
     registrationDateTime: {
         type: Date,
         default: Date.now
+    },
+    avatarUrl: {
+        type: String,
+        default: '../../../common/assets/images/avatar.jpg'
     }
 });
 

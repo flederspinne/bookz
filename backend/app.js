@@ -22,7 +22,6 @@ const apiRouter = require('./routes/api');
 const indexRouter = require('./routes');
 
 const User = require('./models/User');
-const Avatar = require('./models/Avatar');
 
 
 
@@ -60,7 +59,7 @@ passport.use(new LocalStrategy(User.authenticate()));
 passport.use(new VKontakteStrategy({
       clientID:     '7276593', // VK.com docs call it 'API ID', 'app_id', 'api_id', 'client_id' or 'apiId'
       clientSecret: 'TkRiql6bhkpF4SEgggUY',
-      callbackURL: (process.env.REACT_APP_API_URL || 'http://localhost:4000') + '/api/auth/vkontakte/callback'
+      callbackURL: process.env.REACT_APP_API_URL + '/api/auth/vkontakte/callback'
     },
     (accessToken, refreshToken, params, profile, done) => {
       console.log('accessToken', accessToken);
@@ -78,6 +77,7 @@ passport.use(new VKontakteStrategy({
           user = new User({
             username: profile.displayName,
             ensureIndex: profile.username,
+            avatarUrl: profile.photos[0].value
           });
           user.save(function(err) {
             if (err) console.log(err);
@@ -92,11 +92,9 @@ passport.use(new VKontakteStrategy({
 passport.use(new googleStrategy({
       clientID: '198994791507-718stsvad6bmmm4n5i9i8cl4s3h9tc6o.apps.googleusercontent.com',
       clientSecret: 'ALPFqwjPF-FasDLrEAYAmQms',
-      callbackURL: (process.env.REACT_APP_API_URL || 'http://localhost:4000') + '/api/auth/google/callback'
+      callbackURL: process.env.REACT_APP_API_URL + '/api/auth/google/callback'
   },
   (accessToken, refreshToken, profile, done) => {
-    console.log('accessToken', accessToken);
-    console.log('refreshToken', refreshToken);
     console.log('profile', profile)
     User.findOne({
       'ensureIndex': profile.id
@@ -109,9 +107,10 @@ passport.use(new googleStrategy({
         user = new User({
           username: profile.displayName,
           ensureIndex: profile.id,
+          avatarUrl: profile.photos[0].value,
         });
         user.save(function(err) {
-          if (err) console.log(err);
+          if (err) console.log('Some unknown shit happened: ' + err);
           return done(err, user);
         });
       } else {

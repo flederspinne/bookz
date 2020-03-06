@@ -3,7 +3,6 @@ const router = express.Router({mergeParams: true});
 const passportLocalMongoose = require('passport-local-mongoose');
 const passport = require('passport');
 const User = require('../models/User');
-const Avatar = require('../models/Avatar')
 
 const mongoose = require('mongoose');
 const db = require('../db');
@@ -36,7 +35,7 @@ router.get('/me', isAuth, (req, res) => {
   res.send(req.user);
 });
 
-router.get('/avatar', (req, res) => {
+router.get('/avatar', isAuth, (req, res) => {
   const s3 = new aws.S3();
   const fileName = req.query['file-name'];
   const fileType = req.query['file-type'];
@@ -48,6 +47,17 @@ router.get('/avatar', (req, res) => {
     ACL: 'public-read'
   };
 
+  const imageUrl = `https://${S3_BUCKET_NAME}.s3.amazonaws.com/${fileName}`
+
+  console.log('user', req.user)
+  User.updateOne(req.user, { avatarUrl: imageUrl })
+      .then((data)=>{
+        console.log(data);
+      })
+      .catch((err)=>{
+        console.log(err);
+      })
+
   s3.getSignedUrl('putObject', s3Params, (err, data) => {
     if(err){
       console.log(err);
@@ -55,7 +65,7 @@ router.get('/avatar', (req, res) => {
     }
     const returnData = {
       signedRequest: data,
-      url: `https://${S3_BUCKET_NAME}.s3.amazonaws.com/${fileName}`
+      url: imageUrl
     };
     res.write(JSON.stringify(returnData));
     res.end();

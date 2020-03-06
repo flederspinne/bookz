@@ -8,9 +8,9 @@ import api from '../../../common/helpers/api'
 import s from './HomePage.module.scss'
 
 
-const HomePage = () => {
+const HomePage = ({ user }) => {
 
-    const [srcState, setSrcState] = useState(require('../../../common/assets/images/avatar.jpg'))
+    const [srcState, setSrcState] = useState(user ? user.avatarUrl : 'lol')
     const [image, setImage] = useState(undefined)
 
     let imgInput = React.createRef()

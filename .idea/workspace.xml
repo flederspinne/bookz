@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0eda3af9-1e24-43fa-bf6f-a957c047fea3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/common/helpers/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/common/helpers/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/db.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/Avatar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/User.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/home/HomePage/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/home/HomePage/HomePage.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,6 +113,7 @@
       <workItem from="1581321386989" duration="10621000" />
       <workItem from="1581941971794" duration="5988000" />
       <workItem from="1583480809880" duration="2562000" />
+      <workItem from="1583495676361" duration="1459000" />
     </task>
     <task id="LOCAL-00001" summary="Создана заготовка фронтенда проекта.">
       <created>1576661438997</created>
@@ -422,6 +429,9 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/backend" />
+    </ignored-roots>
     <MESSAGE value="Начало разработки схем для БД." />
     <MESSAGE value="Начало разработки роутинга, тестовое сохранение пользователя в БД." />
     <MESSAGE value="Добавлен черновой вариант API для регистрации пользователя, прикручена аутентификация." />
@@ -458,10 +468,10 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="771" y="360" width="434" height="393" key="#com.intellij.fileTypes.FileTypeChooser/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1579166518486" />
-    <state x="726" y="304" width="524" height="505" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1583481119037">
+    <state x="726" y="304" width="524" height="505" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1583485697381">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="726" y="304" width="524" height="505" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1583481119037" />
+    <state x="726" y="304" width="524" height="505" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1583485697381" />
     <state x="632" y="155" width="712" height="804" key="CommitChangelistDialog2" timestamp="1580903189151">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -470,10 +480,10 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="633" height="466" key="DebuggerActiveHint/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1578550208943" />
-    <state x="167" y="127" width="1653" height="853" key="DiffContextDialog" timestamp="1583483372663">
+    <state x="167" y="127" width="1653" height="853" key="DiffContextDialog" timestamp="1583495740284">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="167" y="127" width="1653" height="853" key="DiffContextDialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1583483372663" />
+    <state x="167" y="127" width="1653" height="853" key="DiffContextDialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1583495740284" />
     <state x="776" y="311" width="424" height="491" key="FileChooserDialogImpl" timestamp="1579156282276">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -546,10 +556,10 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="874" y="267" width="410" height="579" key="RollbackChangesDialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1583483267306" />
-    <state x="512" y="188" key="SettingsEditor" timestamp="1583480862212">
+    <state x="512" y="188" width="962" height="737" key="SettingsEditor" timestamp="1583495722856">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="512" y="188" key="SettingsEditor/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1583480862212" />
+    <state x="512" y="188" width="962" height="737" key="SettingsEditor/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1583495722856" />
     <state x="889" y="477" width="199" height="159" key="VCS.EditChangelistDialog" timestamp="1576661207077">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -558,10 +568,10 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="588" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1580903208244" />
-    <state x="111" y="77" width="1653" height="853" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1583483372663">
+    <state x="111" y="77" width="1653" height="853" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1583496921959">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="111" y="77" width="1653" height="853" key="com.intellij.history.integration.ui.views.FileHistoryDialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1583483372663" />
+    <state x="111" y="77" width="1653" height="853" key="com.intellij.history.integration.ui.views.FileHistoryDialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1583496921959" />
     <state x="561" y="292" width="854" height="529" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1578551314051">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
