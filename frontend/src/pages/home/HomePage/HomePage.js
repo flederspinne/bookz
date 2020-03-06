@@ -18,6 +18,7 @@ const HomePage = () => {
     const getSignedRequest = (file) => {
         const xhr = new XMLHttpRequest();
         xhr.open('GET', `${api.usersAvatar}?file-name=${file.name}&file-type=${file.type}`);
+        xhr.withCredentials = true
         xhr.onreadystatechange = () => {
             if(xhr.readyState === 4){
                 if(xhr.status === 200){
