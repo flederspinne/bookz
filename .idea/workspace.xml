@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0eda3af9-1e24-43fa-bf6f-a957c047fea3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/models/Avatar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/pages/home/HomePage/HomePage.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/models/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/User.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/routes/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/users.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/common/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/common/components/Header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/common/components/Input/Input.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/common/components/Input/Input.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/common/helpers/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/common/helpers/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/home/HomePage/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/home/HomePage/HomePage.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +25,7 @@
         <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/backend" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
@@ -49,6 +41,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/backend/public" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
@@ -112,6 +105,8 @@
       <workItem from="1579165822081" duration="3525000" />
       <workItem from="1580889318640" duration="11626000" />
       <workItem from="1581321386989" duration="10621000" />
+      <workItem from="1581941971794" duration="5988000" />
+      <workItem from="1583480809880" duration="2562000" />
     </task>
     <task id="LOCAL-00001" summary="Создана заготовка фронтенда проекта.">
       <created>1576661438997</created>
@@ -463,10 +458,10 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="771" y="360" width="434" height="393" key="#com.intellij.fileTypes.FileTypeChooser/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1579166518486" />
-    <state x="726" y="304" width="524" height="505" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1581336736524">
+    <state x="726" y="304" width="524" height="505" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1583481119037">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="726" y="304" width="524" height="505" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1581336736524" />
+    <state x="726" y="304" width="524" height="505" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1583481119037" />
     <state x="632" y="155" width="712" height="804" key="CommitChangelistDialog2" timestamp="1580903189151">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -475,10 +470,10 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="633" height="466" key="DebuggerActiveHint/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1578550208943" />
-    <state x="167" y="127" width="1653" height="853" key="DiffContextDialog" timestamp="1581657731490">
+    <state x="167" y="127" width="1653" height="853" key="DiffContextDialog" timestamp="1583483372663">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="167" y="127" width="1653" height="853" key="DiffContextDialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1581657731490" />
+    <state x="167" y="127" width="1653" height="853" key="DiffContextDialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1583483372663" />
     <state x="776" y="311" width="424" height="491" key="FileChooserDialogImpl" timestamp="1579156282276">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -547,10 +542,14 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1832" height="192" key="GridCell.Tab.3.right/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1578907542887" />
-    <state x="874" y="267" width="228" height="579" key="RollbackChangesDialog" timestamp="1576824139504">
+    <state x="874" y="267" width="410" height="579" key="RollbackChangesDialog" timestamp="1583483267306">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="874" y="267" width="228" height="579" key="RollbackChangesDialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1576824139504" />
+    <state x="874" y="267" width="410" height="579" key="RollbackChangesDialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1583483267306" />
+    <state x="512" y="188" key="SettingsEditor" timestamp="1583480862212">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="512" y="188" key="SettingsEditor/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1583480862212" />
     <state x="889" y="477" width="199" height="159" key="VCS.EditChangelistDialog" timestamp="1576661207077">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -559,17 +558,17 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="588" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1580903208244" />
-    <state x="167" y="127" width="1653" height="853" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1578899131824">
+    <state x="111" y="77" width="1653" height="853" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1583483372663">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="167" y="127" width="1653" height="853" key="com.intellij.history.integration.ui.views.FileHistoryDialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1578899131824" />
+    <state x="111" y="77" width="1653" height="853" key="com.intellij.history.integration.ui.views.FileHistoryDialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1583483372663" />
     <state x="561" y="292" width="854" height="529" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1578551314051">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="561" y="292" width="854" height="529" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1578551314051" />
-    <state x="703" y="297" width="581" height="512" key="find.popup" timestamp="1580893615938">
+    <state x="703" y="297" width="581" height="512" key="find.popup" timestamp="1583482928745">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="703" y="297" width="581" height="512" key="find.popup/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1580893615938" />
+    <state x="703" y="297" width="581" height="512" key="find.popup/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1583482928745" />
   </component>
 </project>
