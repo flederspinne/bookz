@@ -1,4 +1,6 @@
 import React, { Fragment, useState } from 'react'
+import { withRouter } from 'react-router-dom'
+
 import { useToggle } from '../../hooks'
 
 import Box from '../Box/Box'
@@ -19,7 +21,8 @@ const Header = (props) => {
 
     const {
         user,
-        setUser
+        setUser,
+        history
     } = props
 
     const [ username, setUsername ] = useState('')
@@ -62,7 +65,7 @@ const Header = (props) => {
     const items = [
         {
             text: 'Настройки профиля',
-            onClick: () => { alert('ШУЕ ППШ') }
+            onClick: () => { history.push(links.settingsProfile) }
         },
         {
             text: 'Выход',
@@ -135,4 +138,4 @@ const Header = (props) => {
     )
 }
 
-export default Header
+export default withRouter(Header)

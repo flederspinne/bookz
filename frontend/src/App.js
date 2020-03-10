@@ -39,18 +39,16 @@ const App = () => {
     }, [])
 
   return (
-    <Fragment>
+      <Router>
         <Header user={user} setUser={setUser} />
 
         <div className={s.main}>
-            <Router>
-                <Switch>
-                    <Route path={links.auth} render={(props) => <Auth setUser={setUser} {...props} />} />
-                    <Route path={links.home} render={(props) => <Home user={user} {...props} />} />
-                </Switch>
-            </Router>
+            <Switch>
+                <Route path={links.auth} render={(props) => <Auth setUser={setUser} {...props} />} />
+                <Route path={links.home} render={(props) => <Home user={user} {...props} />} />
+            </Switch>
         </div>
-    </Fragment>
+      </Router>
   );
 }
 
