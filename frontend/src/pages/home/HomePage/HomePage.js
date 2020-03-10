@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react'
+import React, { Fragment, useState, useEffect } from 'react'
 
 import Button from '../../../common/components/Button/Button'
 import Input from '../../../common/components/Input/Input'
@@ -10,8 +10,14 @@ import s from './HomePage.module.scss'
 
 const HomePage = ({ user }) => {
 
-    const [srcState, setSrcState] = useState(user ? user.avatarUrl : 'lol')
+    const [srcState, setSrcState] = useState('lol')
     const [image, setImage] = useState(undefined)
+
+    useEffect(() => {
+        if (user) {
+            setSrcState(user.avatarUrl)
+        }
+    }, [user])
 
     let imgInput = React.createRef()
 
@@ -40,6 +46,7 @@ const HomePage = ({ user }) => {
             console.log('xhr', xhr)
             if(xhr.readyState === 4){
                 if(xhr.status === 200){
+                    console.log('url', url)
                     setSrcState(url)
                 }
                 else{
@@ -62,7 +69,7 @@ const HomePage = ({ user }) => {
             setImage(file)
             reader.readAsDataURL(file)
             reader.onload = () => {
-                setSrcState(URL.createObjectURL(file))
+                // setSrcState(URL.createObjectURL(file))
             }
         }
     }

@@ -32,7 +32,9 @@ const App = () => {
 
         if (getCookie('connect.sid')) {
             fetchUser()
-                .then((data) => setUser(data))
+                .then((data) => {
+                    setUser(data)
+                })
         }
     }, [])
 
