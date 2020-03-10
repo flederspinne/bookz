@@ -84,40 +84,49 @@ const Header = (props) => {
                         </Box>
                     </Link>
 
-                    {
-                        !user
-                        && (
-                            <div className={s.logInWrapper}>
-                                <Box mt="sm" mr="sm">
-                                    <Link onClick={toggleLogin}>Войти</Link>
-                                </Box>
-                                <Box mt="sm" mr="sm">
-                                    <Link href={links.authRegister}>Зарегистрироваться</Link>
-                                </Box>
-                            </div>
-                        )
-                    }
-                    {
-                        user
-                        && (
-                            <Box mr="xxl" className={s.userAndDropdownMenu}>
-                                <Box
-                                    mt="xxs"
-                                    onClick={toggleMenu}
-                                    className={s.avatarBox}
-                                    style={{ backgroundImage: `url(${user.avatarUrl})` }}
-                                />
-                                {
-                                    isMenuOpened
+                    <div className={s.buttonsWrapper}>
+                        <Box mt="xs" mr="md" className={s.addBook}>
+                            <img
+                                src={require('../../assets/images/open-book.svg')}
+                                alt="Добавить книгу"
+                                title="Добавить книгу"
+                            />
+                        </Box>
+                        {
+                            !user
+                            && (
+                                <div className={s.loginWrapper}>
+                                    <Box mt="sm" mr="sm">
+                                        <Link onClick={toggleLogin}>Войти</Link>
+                                    </Box>
+                                    <Box mt="sm" mr="sm">
+                                        <Link href={links.authRegister}>Зарегистрироваться</Link>
+                                    </Box>
+                                </div>
+                            )
+                        }
+                        {
+                            user
+                            && (
+                                <Box mr="xxl" className={s.userAndDropdownMenu}>
+                                    <Box
+                                        mt="xxs"
+                                        onClick={toggleMenu}
+                                        className={s.avatarBox}
+                                        style={{ backgroundImage: `url(${user.avatarUrl})` }}
+                                    />
+                                    {
+                                        isMenuOpened
                                         && (
                                             <Box className={s.dropdownMenuWrapper}>
                                                 <DropdownMenu username={user.username} items={items} />
                                             </Box>
                                         )
-                                }
-                            </Box>
-                        )
-                    }
+                                    }
+                                </Box>
+                            )
+                        }
+                    </div>
                 </div>
             </div>
             {

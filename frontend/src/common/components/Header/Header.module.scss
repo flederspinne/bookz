@@ -12,7 +12,16 @@
   justify-content: space-between;
 }
 
-.logInWrapper {
+.buttonsWrapper {
+  display: flex;
+}
+
+.addBook {
+  width: 32px;
+  cursor: pointer;
+}
+
+.loginWrapper {
   display: flex;
 }
 
@@ -40,7 +49,6 @@
   height: 40px;
   border-radius: 50%;
   background-size: cover;
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
 
