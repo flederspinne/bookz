@@ -21,4 +21,4 @@ const username = 'Имя пользователя'
 
 storiesOf('DropdownMenu', module)
     .add('Default', () => <DropdownMenu items={items} />)
-    .add('WithUser', () => <DropdownMenu user={username} items={items} />)
+    .add('WithUser', () => <DropdownMenu username={username} items={items} />)

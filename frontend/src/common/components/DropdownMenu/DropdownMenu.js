@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 
 import Box from '../Box/Box'
 
@@ -13,19 +13,21 @@ const DropdownMenu = (props) => {
     } = props
 
     return (
-        <div className={s.dropdownMenu}>
-            {
-                username
+        <Fragment>
+            <div className={s.dropdownMenu}>
+                {
+                    username
                     && <Box p="xs" className={s.username}>{username}</Box>
-            }
-            {
-                items.map((item, index) => {
-                    return (
-                        <Box p="xs" key={index} className={s.menuItem} onClick={item.onClick}>{item.text}</Box>
-                    )
-                })
-            }
-        </div>
+                }
+                {
+                    items.map((item, index) => {
+                        return (
+                            <Box p="xs" key={index} className={s.menuItem} onClick={item.onClick}>{item.text}</Box>
+                        )
+                    })
+                }
+            </div>
+        </Fragment>
     )
 }
 

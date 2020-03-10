@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0eda3af9-1e24-43fa-bf6f-a957c047fea3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/src/pages/home/SettingsPage/SettingsPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/pages/home/SettingsPage/SettingsPage.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/common/components/DropdownMenu/DropdownMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/common/components/DropdownMenu/DropdownMenu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/common/components/DropdownMenu/DropdownMenu.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/common/components/DropdownMenu/DropdownMenu.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/common/components/DropdownMenu/DropdownMenu.stories.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/common/components/DropdownMenu/DropdownMenu.stories.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/common/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/common/components/Header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/common/helpers/links.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/common/helpers/links.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/home/HomePage/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/home/HomePage/HomePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/home/HomePage/HomePage.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/home/HomePage/HomePage.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/home/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/common/components/Header/Header.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/common/components/Header/Header.module.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +110,7 @@
       <workItem from="1581321386989" duration="10621000" />
       <workItem from="1581941971794" duration="5988000" />
       <workItem from="1583480809880" duration="2562000" />
-      <workItem from="1583495676361" duration="11393000" />
+      <workItem from="1583495676361" duration="18568000" />
     </task>
     <task id="LOCAL-00001" summary="Создана заготовка фронтенда проекта.">
       <created>1576661438997</created>
@@ -429,7 +427,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583830401472</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="Выделена отдельная страница настроек, реализован переход к настройкам по ссылке.">
+      <created>1583832166381</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1583832166381</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -452,7 +457,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/backend" />
     </ignored-roots>
-    <MESSAGE value="Добавлен черновой вариант API для логина пользователя." />
     <MESSAGE value="Проверка работы с сессиями." />
     <MESSAGE value="Внедрены кириллические шрифты." />
     <MESSAGE value="Начата работа по связи клиентской части с серверной." />
@@ -477,7 +481,8 @@
     <MESSAGE value="Начата работа над отображением аватара пользователя." />
     <MESSAGE value="Продвигается работа над отображением аватара пользователя." />
     <MESSAGE value="Аватар пользователя отображается в хедере страницы. Создан компонент &quot;Выпадающее меню&quot;." />
-    <option name="LAST_COMMIT_MESSAGE" value="Аватар пользователя отображается в хедере страницы. Создан компонент &quot;Выпадающее меню&quot;." />
+    <MESSAGE value="Выделена отдельная страница настроек, реализован переход к настройкам по ссылке." />
+    <option name="LAST_COMMIT_MESSAGE" value="Выделена отдельная страница настроек, реализован переход к настройкам по ссылке." />
   </component>
   <component name="WindowStateProjectService">
     <state x="451" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578550084126">
@@ -492,10 +497,10 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="726" y="304" width="524" height="505" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1583485697381" />
-    <state x="632" y="155" width="712" height="804" key="CommitChangelistDialog2" timestamp="1583830401413">
+    <state x="632" y="155" width="712" height="804" key="CommitChangelistDialog2" timestamp="1583832166317">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="632" y="155" width="712" height="804" key="CommitChangelistDialog2/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1583830401413" />
+    <state x="632" y="155" width="712" height="804" key="CommitChangelistDialog2/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1583832166317" />
     <state width="633" height="466" key="DebuggerActiveHint" timestamp="1578550208943">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -584,10 +589,10 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="889" y="477" width="199" height="159" key="VCS.EditChangelistDialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1576661207077" />
-    <state x="588" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1583830408528">
+    <state x="588" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1583832180251">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="588" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1583830408528" />
+    <state x="588" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1583832180251" />
     <state x="111" y="77" width="1653" height="853" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1583496921959">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>

@@ -77,17 +77,21 @@ const Header = (props) => {
     return (
         <Fragment>
             <div className={s.header}>
-                <Box mt="xxs" ml="md" className={s.wrapper}>
-                    <Logo />
+                <div className={s.wrapper}>
+                    <Link href={links.home}>
+                        <Box mt="xs" ml="md">
+                            <Logo />
+                        </Box>
+                    </Link>
 
                     {
                         !user
                         && (
                             <div className={s.logInWrapper}>
-                                <Box mt="xsm" mr="sm">
+                                <Box mt="sm" mr="sm">
                                     <Link onClick={toggleLogin}>Войти</Link>
                                 </Box>
-                                <Box mt="xsm" mr="sm">
+                                <Box mt="sm" mr="sm">
                                     <Link href={links.authRegister}>Зарегистрироваться</Link>
                                 </Box>
                             </div>
@@ -98,20 +102,23 @@ const Header = (props) => {
                         && (
                             <Box mr="xxl" className={s.userAndDropdownMenu}>
                                 <Box
+                                    mt="xxs"
                                     onClick={toggleMenu}
                                     className={s.avatarBox}
                                     style={{ backgroundImage: `url(${user.avatarUrl})` }}
                                 />
                                 {
                                     isMenuOpened
-                                        && <DropdownMenu username={user.username} items={items} />
+                                        && (
+                                            <Box className={s.dropdownMenuWrapper}>
+                                                <DropdownMenu username={user.username} items={items} />
+                                            </Box>
+                                        )
                                 }
-                                {/*{user.username}*/}
-                                {/*<Link onClick={logout}>Выйти</Link>*/}
                             </Box>
                         )
                     }
-                </Box>
+                </div>
             </div>
             {
                 !user && isLoginOpened
