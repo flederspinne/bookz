@@ -27,7 +27,7 @@ const getClasses = (keys) => {
 
 const Box = (props) => {
   const {
-    children, className, id, alignCenter, alignRight, alignLeft, onClick,
+    children, className, style, id, alignCenter, alignRight, alignLeft, onClick,
     center, inline, dataTestId, ...keys
   } = props
 
@@ -40,7 +40,7 @@ const Box = (props) => {
   })
 
   return (
-    <div className={rootClassName} id={id} data-testid={dataTestId} onClick={onClick}>
+    <div className={rootClassName} id={id} data-testid={dataTestId} onClick={onClick} style={style} >
       {children}
     </div>
   )

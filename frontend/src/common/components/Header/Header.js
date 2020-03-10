@@ -7,6 +7,7 @@ import Logo from '../Logo/Logo'
 import Panel from '../Panel/Panel'
 import Input from '../Input/Input'
 import Button from '../Button/Button'
+import DropdownMenu from '../DropdownMenu/DropdownMenu'
 
 import api from '../../helpers/api'
 import links from '../../helpers/links'
@@ -23,7 +24,8 @@ const Header = (props) => {
 
     const [ username, setUsername ] = useState('')
     const [ password, setPassword ] = useState('')
-    const { toggle: togglePanel, close: closePanel, isActive: isPanelOpened } = useToggle(false)
+    const { toggle: toggleLogin, close: closeLogin, isActive: isLoginOpened } = useToggle(false)
+    const { toggle: toggleMenu, close: closeMenu, isActive: isMenuOpened } = useToggle(false)
 
     const login = async () => {
         let response = await fetch(api.authLogin, {
@@ -57,6 +59,17 @@ const Header = (props) => {
             .then(() => setUser(null))
     }
 
+    const items = [
+        {
+            text: 'Настройки профиля',
+            onClick: () => { alert('ШУЕ ППШ') }
+        },
+        {
+            text: 'Выход',
+            onClick: logout
+        },
+    ]
+
 
     return (
         <Fragment>
@@ -69,7 +82,7 @@ const Header = (props) => {
                         && (
                             <div className={s.logInWrapper}>
                                 <Box mt="xsm" mr="sm">
-                                    <Link onClick={togglePanel}>Войти</Link>
+                                    <Link onClick={toggleLogin}>Войти</Link>
                                 </Box>
                                 <Box mt="xsm" mr="sm">
                                     <Link href={links.authRegister}>Зарегистрироваться</Link>
@@ -80,16 +93,25 @@ const Header = (props) => {
                     {
                         user
                         && (
-                            <Fragment>
-                                {user.username}
-                                <Link onClick={logout}>Выйти</Link>
-                            </Fragment>
+                            <Box mr="xxl" className={s.userAndDropdownMenu}>
+                                <Box
+                                    onClick={toggleMenu}
+                                    className={s.avatarBox}
+                                    style={{ backgroundImage: `url(${user.avatarUrl})` }}
+                                />
+                                {
+                                    isMenuOpened
+                                        && <DropdownMenu username={user.username} items={items} />
+                                }
+                                {/*{user.username}*/}
+                                {/*<Link onClick={logout}>Выйти</Link>*/}
+                            </Box>
                         )
                     }
                 </Box>
             </div>
             {
-                !user && isPanelOpened
+                !user && isLoginOpened
                 && (
                     <Box mt="lg" mr="xlg" className={s.panelWrapper}>
                         <Panel

@@ -1,0 +1,27 @@
+.dropdownMenu {
+  position: absolute;
+  right: 0;
+  width: 180px;
+  color: $dark-gray-2;
+  font-size: 14px;
+  background: white;
+  border: 1px solid $light-turquoise-2;
+  border-radius: 2px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.username {
+  border-bottom: 1px solid $light-turquoise-2;
+}
+
+.menuItem {
+  cursor: pointer;
+
+  &:hover {
+    background: $light-turquoise-2;
+  }
+
+  &:active {
+    background: $light-turquoise;
+  }
+}
