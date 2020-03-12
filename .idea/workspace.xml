@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0eda3af9-1e24-43fa-bf6f-a957c047fea3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/models/Book.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/routes/books.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/routes/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/api.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,14 +107,7 @@
       <workItem from="1581321386989" duration="10621000" />
       <workItem from="1581941971794" duration="5988000" />
       <workItem from="1583480809880" duration="2562000" />
-      <workItem from="1583495676361" duration="24545000" />
-    </task>
-    <task id="LOCAL-00001" summary="Создана заготовка фронтенда проекта.">
-      <created>1576661438997</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1576661438997</updated>
+      <workItem from="1583495676361" duration="25763000" />
     </task>
     <task id="LOCAL-00002" summary="В проект добавлен Storybook.">
       <created>1576662098281</created>
@@ -451,7 +445,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583999355710</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Добавлена первоначальная версия схемы книги для БД.">
+      <created>1584000925046</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1584000925047</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -474,7 +475,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/backend" />
     </ignored-roots>
-    <MESSAGE value="Вход пользователя в систему осуществляется корректно, однако выход из системы ещё не доработан." />
     <MESSAGE value="Доработан выход из системы." />
     <MESSAGE value="Добавлена заготовка для домашней страницы." />
     <MESSAGE value="Начата работа над хедером страницы." />
@@ -499,7 +499,8 @@
     <MESSAGE value="Мелкие правки. Усовершенствован дизайн дропдауна." />
     <MESSAGE value="Добавлена кнопка добавления книги." />
     <MESSAGE value="Добавлен вариант дропдауна, ориентированный на левую сторону элемента, вызывающего появление дропдауна." />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлен вариант дропдауна, ориентированный на левую сторону элемента, вызывающего появление дропдауна." />
+    <MESSAGE value="Добавлена первоначальная версия схемы книги для БД." />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлена первоначальная версия схемы книги для БД." />
   </component>
   <component name="WindowStateProjectService">
     <state x="451" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578550084126">
@@ -514,10 +515,10 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="726" y="304" width="524" height="505" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1583485697381" />
-    <state x="441" y="199" width="712" height="804" key="CommitChangelistDialog2" timestamp="1583999355651">
+    <state x="441" y="199" width="712" height="804" key="CommitChangelistDialog2" timestamp="1584000925002">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="441" y="199" width="712" height="804" key="CommitChangelistDialog2/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1583999355651" />
+    <state x="441" y="199" width="712" height="804" key="CommitChangelistDialog2/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1584000925002" />
     <state width="633" height="466" key="DebuggerActiveHint" timestamp="1578550208943">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -606,10 +607,10 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="889" y="477" width="199" height="159" key="VCS.EditChangelistDialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1576661207077" />
-    <state x="588" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1583999361351">
+    <state x="588" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1584000967378">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="588" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1583999361351" />
+    <state x="588" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1584000967378" />
     <state x="111" y="77" width="1653" height="853" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1583496921959">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -618,9 +619,9 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="561" y="292" width="854" height="529" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1578551314051" />
-    <state x="703" y="297" width="581" height="512" key="find.popup" timestamp="1583482928745">
+    <state x="703" y="297" width="581" height="512" key="find.popup" timestamp="1584001087168">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="703" y="297" width="581" height="512" key="find.popup/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1583482928745" />
+    <state x="703" y="297" width="581" height="512" key="find.popup/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1584001087168" />
   </component>
 </project>
