@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { storiesOf } from '@storybook/react'
 // import { action } from '@storybook/addon-actions'
 import '../../styles/fonts.scss'
@@ -20,5 +20,9 @@ const items = [
 const username = 'Имя пользователя'
 
 storiesOf('DropdownMenu', module)
-    .add('Default', () => <DropdownMenu items={items} />)
+    .add('Default',
+        () => <Fragment>
+            <DropdownMenu items={items} alignLeft />
+            <DropdownMenu items={items} alignRight />
+        </Fragment>)
     .add('WithUser', () => <DropdownMenu username={username} items={items} />)

@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react'
+import cx from 'classnames'
 
 import Box from '../Box/Box'
 
@@ -9,12 +10,19 @@ const DropdownMenu = (props) => {
 
     const {
         items,
-        username
+        username,
+        alignRight,
+        alignLeft
     } = props
+
+    const dropdownClassName = cx(s.dropdownMenu, {
+        [s.right]: alignRight,
+        [s.left]: alignLeft
+    })
 
     return (
         <Fragment>
-            <div className={s.dropdownMenu}>
+            <div className={dropdownClassName}>
                 {
                     username
                     && <Box p="xs" className={s.username}>{username}</Box>

@@ -1,7 +1,6 @@
 .dropdownMenu {
   position: absolute;
   top: 7px;
-  right: 0;
   width: 180px;
   color: $dark-gray-2;
   font-size: 14px;
@@ -10,11 +9,40 @@
   border-radius: 2px;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 
+  &.right {
+    right: 0;
+    left: unset;
+
+    &::before {
+      right: 10px;
+      left: unset;
+    }
+
+    &::after {
+      right: 12px;
+      left: unset;
+    }
+  }
+
+  &.left {
+    right: unset;
+    left: 0;
+
+    &::before {
+      right: unset;
+      left: 18px;
+    }
+
+    &::after {
+      right: unset;
+      left: 12px;
+    }
+  }
+
   &::before {
     content: '';
     position: absolute;
     top: -7px;
-    right: 10px;
     z-index: -1;
     width: 8px;
     height: 8px;
@@ -28,7 +56,6 @@
     content: '';
     position: absolute;
     top: -12px;
-    right: 12px;
     border: 6px solid white;
     border-color: transparent transparent white;
     transform-origin: 0 0

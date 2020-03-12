@@ -119,7 +119,7 @@ const Header = (props) => {
                                         isMenuOpened
                                         && (
                                             <Box className={s.dropdownMenuWrapper}>
-                                                <DropdownMenu username={user.username} items={items} />
+                                                <DropdownMenu username={user.username} items={items} alignRight />
                                             </Box>
                                         )
                                     }
