@@ -22,7 +22,7 @@ const apiRouter = require('./routes/api');
 const indexRouter = require('./routes');
 
 const User = require('./models/User');
-
+const Book = require('./models/Book');
 
 
 app.use(session({
